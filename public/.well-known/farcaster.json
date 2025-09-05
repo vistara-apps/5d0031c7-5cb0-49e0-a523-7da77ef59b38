@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "ShipItOnBase",
+    "subtitle": "Built with Zara",
+    "description": "ShipItOnBase is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://5d0031c75cb049e0a5237da77ef59b38-ge81.vercel.app",
+    "splashImageUrl": "https://5d0031c75cb049e0a5237da77ef59b38-ge81.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://5d0031c75cb049e0a5237da77ef59b38-ge81.vercel.app/image.png",
+    "tagline": "ShipItOnBase",
+    "screenshotUrls": [
+      "https://5d0031c75cb049e0a5237da77ef59b38-ge81.vercel.app/screenshot.png",
+      "https://5d0031c75cb049e0a5237da77ef59b38-ge81.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://5d0031c75cb049e0a5237da77ef59b38-ge81.vercel.app/api/webhook"
+  }
+}
