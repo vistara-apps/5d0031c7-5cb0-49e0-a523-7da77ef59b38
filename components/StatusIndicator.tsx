@@ -3,7 +3,7 @@
 import { cn } from '@/lib/utils';
 
 interface StatusIndicatorProps {
-  status: 'open' | 'accepted' | 'completed' | 'cancelled';
+  status: 'open' | 'accepted' | 'in_progress' | 'completed' | 'cancelled';
   className?: string;
 }
 
@@ -21,6 +21,12 @@ export function StatusIndicator({ status, className }: StatusIndicatorProps) {
           color: 'bg-blue-500',
           text: 'Accepted',
           textColor: 'text-blue-400',
+        };
+      case 'in_progress':
+        return {
+          color: 'bg-yellow-500',
+          text: 'In Progress',
+          textColor: 'text-yellow-400',
         };
       case 'completed':
         return {
