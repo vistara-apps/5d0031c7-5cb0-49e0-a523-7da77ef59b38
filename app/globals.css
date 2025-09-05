@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white min-h-screen;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  :root {
+    --bg: hsl(210, 46%, 98%);
+    --accent: hsl(48, 100%, 50%);
+    --primary: hsl(204, 94%, 65%);
+    --surface: hsl(0, 0%, 100%);
+    --text-primary: hsl(210, 40%, 20%);
+    --text-secondary: hsl(210, 40%, 40%);
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 rounded-lg shadow-card;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-lg font-medium hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-20 transition-all duration-200;
+  }
+
+  .metric-card {
+    @apply glass-card p-4 hover:bg-opacity-15 transition-all duration-200;
+  }
+
+  .sidebar-item {
+    @apply flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10 transition-all duration-200 cursor-pointer;
+  }
+
+  .sidebar-item.active {
+    @apply text-white bg-white bg-opacity-10;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.2s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.2s ease-in-out;
+  }
+}
